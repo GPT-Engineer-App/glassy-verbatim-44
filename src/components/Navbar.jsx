@@ -1,5 +1,6 @@
 import React from "react";
-import { Box, Flex, Text, Button, Stack, useColorMode } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack, useColorMode, useColorModeValue, IconButton } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box bg={colorMode === "light" ? "gray.100" : "gray.900"} px={4}>
+    <Box bg={useColorModeValue("rgba(255, 255, 255, 0.1)", "rgba(0, 0, 0, 0.2)")} px={4} backdropFilter="blur(10px)">
       <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
         <Text fontSize="xl" fontWeight="bold" ml="2" color={colorMode === "light" ? "gray.800" : "white"}>
           Verbatim
@@ -15,7 +16,9 @@ const Navbar = () => {
 
         <Flex alignItems={"center"}>
           <Stack direction={"row"} spacing={7}>
-            <Button onClick={toggleColorMode}>{colorMode === "light" ? <FaMoon /> : <FaSun />}</Button>
+            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+              <IconButton icon={colorMode === "light" ? <FaMoon /> : <FaSun />} onClick={toggleColorMode} variant="ghost" aria-label="Toggle dark mode" />
+            </motion.div>
 
             <Button as={Link} to="/login" fontSize={"sm"} fontWeight={400}>
               Sign In

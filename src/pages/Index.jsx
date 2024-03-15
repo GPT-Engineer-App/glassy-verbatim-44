@@ -17,7 +17,7 @@ const Index = () => {
     <>
       <Navbar />
       <Container maxW={"5xl"}>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} py={20}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} py={28} alignItems="center">
           <Box>
             <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }} color="white">
               Connect with{" "}
@@ -28,14 +28,14 @@ const Index = () => {
             <Text color={"gray.400"} fontSize={"lg"} mt={4}>
               Verbatim is the next-generation social platform that puts you in control. Share your thoughts, engage in meaningful discussions, and build a community around your passions.
             </Text>
-            <Button size="lg" colorScheme="purple" mt="24px" fontWeight="bold" fontSize="md" px={6}>
+            <Button size="lg" colorScheme="purple" mt="24px" fontWeight="bold" fontSize="md" px={8}>
               Join Now
             </Button>
           </Box>
           <Image src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxzb2NpYWwlMjBtZWRpYSUyMGFwcCUyMG1vY2t1cCUyMG9uJTIwcGhvbmV8ZW58MHx8fHwxNzEwNDg2MTM4fDA&ixlib=rb-4.0.3&q=80&w=1080" alt="Verbatim App" borderRadius={"md"} boxShadow="2xl" />
         </SimpleGrid>
 
-        <Box py={20}>
+        <Box py={28}>
           <VStack spacing={2} textAlign="center">
             <Heading as="h1" fontSize="4xl">
               Verbatim Features
@@ -52,14 +52,14 @@ const Index = () => {
           </SimpleGrid>
         </Box>
 
-        <Box bgImage="https://images.unsplash.com/photo-1503455637927-730bce8583c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTcxMDQ4NjEzOXww&ixlib=rb-4.0.3&q=80&w=1080" py={20} bgSize="cover" bgPosition="center" borderRadius="lg" overflow="hidden" position="relative">
+        <Box bgImage="https://images.unsplash.com/photo-1503455637927-730bce8583c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTcxMDQ4NjEzOXww&ixlib=rb-4.0.3&q=80&w=1080" py={32} bgSize="cover" bgPosition="center" borderRadius="lg" overflow="hidden" position="relative" bgAttachment="fixed">
           <Box bgColor="blackAlpha.700" position="absolute" top={0} left={0} w="100%" h="100%" />
           <VStack spacing={6} textAlign="center" zIndex={1} position="relative" color="white">
             <Heading fontSize="4xl">Ready to Join Verbatim?</Heading>
             <Text fontSize="xl" maxW="md">
               Sign up now and start connecting with people who share your passions.
             </Text>
-            <Button size="lg" colorScheme="purple">
+            <Button size="lg" colorScheme="purple" px={8}>
               Get Started
             </Button>
           </VStack>
