@@ -3,6 +3,7 @@ import { Box, Heading, Text, Button, VStack, Image, Container, SimpleGrid, Flex,
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
+import ScaleFadeEx from "./ScaleFadeEx"; // Import ScaleFadeEx komponen baru
 
 const MotionBox = motion(Box);
 
@@ -20,6 +21,7 @@ const Feature = ({ title, text, image }) => {
         <Text fontSize="xl" color="gray.500">
           {text}
         </Text>
+        <ScaleFadeEx /> {/* Tambahkan komponen ScaleFadeEx di sini */}
       </MotionBox>
     </Flex>
   );
