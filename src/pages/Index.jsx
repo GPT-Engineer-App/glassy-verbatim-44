@@ -1,9 +1,8 @@
 import React from "react";
-import { Box, Heading, Text, Button, VStack, Image, Container, SimpleGrid, Flex, Spacer } from "@chakra-ui/react";
+import { Box, Heading, Text, Button, VStack, Image, Container, SimpleGrid, Flex, Spacer, Fade, ScaleFade, Slide, SlideFade, Collapse } from "@chakra-ui/react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
-import ScaleFadeEx from "./ScaleFadeEx"; // Import ScaleFadeEx komponen baru
 
 const MotionBox = motion(Box);
 
@@ -21,7 +20,6 @@ const Feature = ({ title, text, image }) => {
         <Text fontSize="xl" color="gray.500">
           {text}
         </Text>
-        <ScaleFadeEx /> {/* Tambahkan komponen ScaleFadeEx di sini */}
       </MotionBox>
     </Flex>
   );
@@ -57,6 +55,28 @@ const Index = () => {
           <Feature title="Private Groups" text="Create invite-only spaces to discuss shared interests with like-minded individuals." image="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcml2YXRlJTIwZ3JvdXBzfGVufDB8fHx8MTcxMDQ4NjE0MHww&ixlib=rb-4.0.3&q=80&w=1080" />
           <Feature title="Rich Media" text="Express yourself with images, videos, and audio alongside your text posts." image="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxyaWNoJTIwbWVkaWF8ZW58MHx8fHwxNzEwNDg2MTQwfDA&ixlib=rb-4.0.3&q=80&w=1080" />
         </VStack>
+
+        function ScaleFadeEx() {
+  const { isOpen, onToggle } = useDisclosure()
+
+  return (
+    <>
+      <Button onClick={onToggle}>Click Me</Button>
+      <ScaleFade initialScale={0.9} in={isOpen}>
+        <Box
+          p='40px'
+          color='white'
+          mt='4'
+          bg='teal.500'
+          rounded='md'
+          shadow='md'
+        >
+          Fade
+        </Box>
+      </ScaleFade>
+    </>
+  )
+}
 
         <Box py={40}>
           <VStack spacing={8} textAlign="center">
