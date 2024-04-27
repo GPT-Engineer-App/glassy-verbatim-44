@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Index />} />
         <Route exact path="/login" element={<Login />} /> {/* Tambahkan rute untuk halaman login */}
-        <<Route exact path="/dashboard" element={<Dashboard />} /> {/* Tambahkan rute untuk halaman dashboard */}
+        <Route exact path="/dashboard" element={<Dashboard />} /> {/* Tambahkan rute untuk halaman dashboard */}
       </Routes>
     </Router>
   );
