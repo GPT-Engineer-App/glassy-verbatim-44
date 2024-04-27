@@ -11,20 +11,14 @@ const Footer = () => {
               Product
             </Text>
             <Link href={"#"}>Overview</Link>
-            <Link href={"#"}>Features</Link>
             <Link href={"#"}>Tutorials</Link>
-            <Link href={"#"}>Pricing</Link>
-            <Link href={"#"}>Releases</Link>
           </Stack>
 
           <Stack align={"flex-start"}>
             <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
               Follow Us
             </Text>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
             <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
           </Stack>
         </SimpleGrid>
         <Divider />
