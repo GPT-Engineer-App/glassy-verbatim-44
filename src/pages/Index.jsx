@@ -58,7 +58,7 @@ const Index = () => {
 
         <Box py={40}>
           <VStack spacing={8} textAlign="center">
-            <Heading fontSize="5xl">Ready to Join Verbatim?</Heading>
+            <Heading fontSize="5xl">Ready to Join with us?</Heading>
             <Text fontSize="2xl" maxW="2xl" mx="auto" color="gray.500">
               Sign up sekarang dan mulai belajar tentang Artificial Intelligence.
             </Text>
