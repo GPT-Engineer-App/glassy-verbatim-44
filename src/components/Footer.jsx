@@ -18,12 +18,12 @@ const Footer = () => {
             <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
               Follow Us
             </Text>
-            <Link href={"#"}>Instagram</Link>
+            <Link href={"https://www.instagram.com/norriii_7/"}>Instagram</Link>
           </Stack>
         </SimpleGrid>
         <Divider />
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          &copy; {new Date().getFullYear()} Verbatim. All rights reserved.
+          &copy; {new Date().getFullYear()} PELPA. All rights reserved.
         </Text>
       </Container>
     </Box>
