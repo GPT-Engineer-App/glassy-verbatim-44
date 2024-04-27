@@ -16,25 +16,7 @@ const Footer = () => {
             <Link href={"#"}>Pricing</Link>
             <Link href={"#"}>Releases</Link>
           </Stack>
-          <Stack align={"flex-start"}>
-            <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
-              Company
-            </Text>
-            <Link href={"#"}>About</Link>
-            <Link href={"#"}>Press</Link>
-            <Link href={"#"}>Careers</Link>
-            <Link href={"#"}>Contact</Link>
-            <Link href={"#"}>Partners</Link>
-          </Stack>
-          <Stack align={"flex-start"}>
-            <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
-              Support
-            </Text>
-            <Link href={"#"}>Help Center</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Status</Link>
-          </Stack>
+
           <Stack align={"flex-start"}>
             <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
               Follow Us
