@@ -51,9 +51,9 @@ const Index = () => {
         </SimpleGrid>
 
         <VStack spacing={20} mt={40}>
-          <Feature title="Microblogging" text="Share your thoughts, ideas, and experiences in short, engaging posts." image="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtaWNyb2Jsb2dnaW5nfGVufDB8fHx8MTcxMDQ4NjE0MHww&ixlib=rb-4.0.3&q=80&w=1080" />
-          <Feature title="Private Groups" text="Create invite-only spaces to discuss shared interests with like-minded individuals." image="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcml2YXRlJTIwZ3JvdXBzfGVufDB8fHx8MTcxMDQ4NjE0MHww&ixlib=rb-4.0.3&q=80&w=1080" />
-          <Feature title="Rich Media" text="Express yourself with images, videos, and audio alongside your text posts." image="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxyaWNoJTIwbWVkaWF8ZW58MHx8fHwxNzEwNDg2MTQwfDA&ixlib=rb-4.0.3&q=80&w=1080" />
+          <Feature title="Kaya akan materi" text="Banyak sekali materi yang kami siapkan dari mulai yang paling dasar." image="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxtaWNyb2Jsb2dnaW5nfGVufDB8fHx8MTcxMDQ4NjE0MHww&ixlib=rb-4.0.3&q=80&w=1080" />
+          <Feature title="Grup Private" text="Gabung ke grup dan diskusi seputar perkembangan Ai didunia saat ini dengan yang lain." image="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwcml2YXRlJTIwZ3JvdXBzfGVufDB8fHx8MTcxMDQ4NjE0MHww&ixlib=rb-4.0.3&q=80&w=1080" />
+          <Feature title="Terus berkembang" text="Pelpa tidak akan berhenti berkembang selama kalian terus mendukung visi misi kami." image="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxyaWNoJTIwbWVkaWF8ZW58MHx8fHwxNzEwNDg2MTQwfDA&ixlib=rb-4.0.3&q=80&w=1080" />
         </VStack>
 
         <Box py={40}>
