@@ -39,6 +39,7 @@ const Navbar = () => {
           </Flex>
         </VStack>
       </Collapse>
+      <Progress size='xs' isIndeterminate />
     </Box>
   );
 };
