@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Box, Flex, Text, Button, Stack, useColorModeValue, IconButton, Collapse, VStack } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack, useColorModeValue, IconButton, Collapse, VStack, useColorMode } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar = () => {
+  const { colorMode, toggleColorMode } = useColorMode();
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -12,7 +13,10 @@ const Navbar = () => {
         <Text fontSize="2xl" fontWeight="bold" color={useColorModeValue("purple.500", "purple.300")}>
           Verbatim
         </Text>
-        <IconButton icon={<FaBars />} onClick={() => setShowMenu(!showMenu)} variant="outline" aria-label="Open Menu" />
+        <Flex>
+          <IconButton icon={colorMode === "light" ? <FaSun /> : <FaMoon />} onClick={toggleColorMode} variant="ghost" aria-label="Toggle color mode" mr={4} />
+          <IconButton icon={<FaBars />} onClick={() => setShowMenu(!showMenu)} variant="outline" aria-label="Open Menu" />
+        </Flex>
       </Flex>
       <Collapse in={showMenu}>
         <VStack align="start" p={4} spacing={4} bg={useColorModeValue("white", "gray.800")}>
