@@ -34,15 +34,15 @@ const Index = () => {
           <MotionBox initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Heading fontSize={{ base: "4xl", md: "6xl" }} mb={6}>
               Connect with{" "}
-              <Text as="span" color="purple.500">
-                Verbatim
+              <Text as="span" color="red.500">
+                PELPA
               </Text>
             </Heading>
             <Text fontSize="2xl" color="gray.500" mb={8}>
-              The next-generation social platform that puts you in control. Share your thoughts, engage in meaningful discussions, and build a community around your passions.
+              Era modern yang akan kita kenal saat ini akan berkembang ke dunia Ai, dimana mana terintergrasi dengan kecerdasan buatan. Sebelum hal itu terjadi PELPA hadir untuk mengedukasi masyarakat dan meneliti Ai untuk masyarakat.
             </Text>
-            <Button size="lg" colorScheme="purple" px={8}>
-              Join Now
+            <Button size="lg" colorScheme="red" px={8}>
+              Mulai Belajar
             </Button>
           </MotionBox>
           <MotionBox initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
@@ -60,10 +60,10 @@ const Index = () => {
           <VStack spacing={8} textAlign="center">
             <Heading fontSize="5xl">Ready to Join Verbatim?</Heading>
             <Text fontSize="2xl" maxW="2xl" mx="auto" color="gray.500">
-              Sign up now and start connecting with people who share your passions.
+              Sign up sekarang dan mulai belajar tentang Artificial Intelligence.
             </Text>
-            <Button size="lg" colorScheme="purple" px={12} py={8} fontSize="xl">
-              Get Started
+            <Button size="lg" colorScheme="red" px={12} py={8} fontSize="xl">
+              Mulai
             </Button>
           </VStack>
         </Box>
